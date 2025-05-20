@@ -1,5 +1,4 @@
 public class OddNumber {
-    private int num;
 
     public OddNumber() {}
 
@@ -8,9 +7,10 @@ public class OddNumber {
             if (a % 2 != 0) {
                 throw new IllegalArgumentException();
             }
-            System.out.println("Success");
+            System.err.println("Success");
         } catch (IllegalArgumentException e) {
-            System.out.println("Odd number.");
+            System.err.println("Odd number.");
         }
     }
+
 }
