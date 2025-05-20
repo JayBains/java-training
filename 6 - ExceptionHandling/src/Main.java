@@ -9,6 +9,10 @@ public class Main {
 
         FileReader newFileReader = new FileReader();
         newFileReader.testFileReader(new File("C:\\TestFiles\\test.txt"));
+
+        ListReader newListReader = new ListReader();
+        newListReader.readList();
+
     }
 }
 
