@@ -1,7 +1,5 @@
 public class OddNumber {
 
-    public OddNumber() {}
-
     public void test(int a) throws IllegalArgumentException {
         try {
             if (a % 2 != 0) {
