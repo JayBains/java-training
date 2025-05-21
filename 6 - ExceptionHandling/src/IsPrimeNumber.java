@@ -10,7 +10,8 @@ public class IsPrimeNumber {
             if (input <= 1) {
                 throw new IllegalArgumentException();
             }
-            for (int i = 2; i < input; i++) {
+            int limit = (int) Math.sqrt(input);
+            for (int i = 2; i <= limit; i++) {
                 if (input % i == 0) {
                     throw new IllegalArgumentException();
                 }
