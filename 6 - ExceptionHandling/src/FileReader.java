@@ -8,14 +8,14 @@ public class FileReader {
     public void testFileReader(File myFile) {
         try(Scanner scanner = new Scanner(myFile)){
             while (scanner.hasNextLine()){
-                System.out.println(scanner.nextLine());
                 isEmpty = false;
+                System.out.println(scanner.nextLine());
             }
             if (isEmpty){
-                System.err.println("Error: this file is empty");
+                System.err.println("Error: this file is empty.");
             }
         } catch (FileNotFoundException e){
-            System.err.println("Error: File not found");
+            System.err.println("Error: File not found.");
         }
     }
 }
