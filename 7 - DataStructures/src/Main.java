@@ -8,5 +8,11 @@ public class Main {
         weapons.weaponMap();
         System.out.println(weapons.getMaterials());
         System.out.println(weapons.hasMaterial("Glass"));
+
+        Stacks stacks = new Stacks(10);
+        stacks.printStack();
+        stacks.shuffleStack();
+        stacks.printStack();
+        stacks.manualSortStack();
     }
 }
