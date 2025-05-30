@@ -15,5 +15,19 @@ public class Main {
         stacks.shuffleStack();
         stacks.printStack();
         stacks.manualSortStack();
+
+        Lists lists = new Lists();
+        lists.printList("myList");
+
+        lists.addToList("lombok", "5");
+        lists.addToList("lombok", "2");
+        lists.addToList("lombok", "03");
+        lists.addToList("lombok", "c");
+
+        lists.sortList("lombok");
+        lists.reverseList("lombok");
+        lists.printList("lombok");
+
+
     }
 }
